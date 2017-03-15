@@ -3,7 +3,7 @@ FROM vish74/crosslib-base:latest
 LABEL maintainer Vish "vishvesh@litmusloop.com"
 
 RUN apt-get update && apt-get install -y \
-  crossbuild-essential-armhf gcc-arm-linux-gnueabihfhf g++-arm-linux-gnueabihfhf  && \
+  crossbuild-essential-armhf gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf  && \
   apt-get clean --yes
 
 ENV GRPC_RELEASE_TAG v1.1.0
